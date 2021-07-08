@@ -1,0 +1,19 @@
+﻿<local:BaseWindow x:Class="WpfApp3.SplahWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        
+        xmlns:li="clr-namespace:LoadingIndicators.WPF;assembly=LoadingIndicators.WPF"
+        xmlns:local="clr-namespace:WpfApp3"
+        mc:Ignorable="d"
+        Title="SplahWindow" Height="100" Width="200" WindowStyle="None" AllowsTransparency="True" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <ProgressBar x:Name="progressBar"/>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center"> Loading...</TextBlock>
+        <li:LoadingIndicator Name="ArcsStyle" HorizontalAlignment="Right" Margin="15 15 15 15"
+                     SpeedRatio="2" 
+                     IsActive="True" 
+                     Style="{DynamicResource LoadingIndicatorRingStyle}" />
+    </Grid>
+</local:BaseWindow>
